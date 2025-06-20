@@ -12,7 +12,6 @@ int main()
 	int attempts = 3;
 	string inputPin;
 
-
 	while(attempts > 0) {
 		cout << "PIN: ";
 		cin >> inputPin;
@@ -26,5 +25,25 @@ int main()
 	}
 	return 0;
 }
+*/
 
+/*
+//2 point
+
+int main()
+{
+	const string correctPin = "000000";
+	string foundPin;
+	
+	for (int i = 0; i <= 999999; i++) {
+		foundPin = to_string(i);
+		while (foundPin.length() < 6) {
+			foundPin = "0" + foundPin;
+		}
+		foundPin == correctPin ? void(cout << "PIN: " << foundPin) : void();
+	}
+
+	cout << "\n";
+	return 0;
+}
 */
