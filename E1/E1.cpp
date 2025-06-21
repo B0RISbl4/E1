@@ -4,9 +4,8 @@
 std::vector<int> findPin(int from, int to, int correctPin) {
     std::vector<int> foundPins;
     for (int i = from; i <= to; ++i) {
-        if (i == correctPin) {
+        if (i == correctPin)
             foundPins.push_back(i);
-        }
     }
     return foundPins;
 }
