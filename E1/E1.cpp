@@ -1,10 +1,9 @@
 ﻿#include <iostream>
 #include <vector>
-using namespace std;
 
-vector<int> findPin(int from, int to, int correctPin) {
-    vector<int> foundPins;
-    for (int i = from; i <= to; i++) {
+std::vector<int> findPin(int from, int to, int correctPin) {
+    std::vector<int> foundPins;
+    for (int i = from; i <= to; ++i) {
         if (i == correctPin) {
             foundPins.push_back(i);
         }
@@ -14,10 +13,10 @@ vector<int> findPin(int from, int to, int correctPin) {
 
 int main() {
     const int correctPin = 12345;
-    vector<int> foundPin = findPin(0, 999999, correctPin);
+    std::vector<int> foundPin = findPin(0, 999999, correctPin);
 
-    cout << "PIN: " << foundPin[0];
+    std::cout << "PIN: " << foundPin[0];
 
-    cout << "\n";
+    std::cout << "\n";
     return 0;
 }
